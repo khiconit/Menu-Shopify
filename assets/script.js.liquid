@@ -1,0 +1,30 @@
+jQuery(document).ready(function($) {
+    $maxwidth = 800;
+    $li_width = 200;
+    $("#menu-navigation ul.site-nav li.site-nav--has-dropdown").each(function(index, el) {
+        $check = $(this).children('ul').children('li').hasClass('has_child');
+        if($check){
+            $length = $(this).children('ul').children('li').length;
+            $width = parseInt($length) * $li_width;
+            if($width>$maxwidth ){
+                $width =$maxwidth ;
+            }
+            $(this).children('ul').css('width',$width+'px');
+        }
+    });
+	   // Kéo xuống khoảng cách 220px thì xuất hiện button
+    var offset = 220;
+ 
+    // THời gian di trượt là 0.5 giây
+    var duration = 500;
+	 jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+          //  jQuery(id_button).fadeIn(duration);
+         $(".enable-fixed").addClass('menu-fixed');
+        } else {
+        	console.log(jQuery(this).scrollTop());
+        	$(".enable-fixed").removeClass('menu-fixed');
+         
+        }
+    });
+});

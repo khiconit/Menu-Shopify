@@ -1,0 +1,1584 @@
+[{
+    "name": "theme_info",
+    "logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/0070\/7032\/files\/2010_6_23_Shopify-Green_256x256.jpg",
+    "settings": [{
+        "type": "header",
+        "content": "Timber Framework"
+    }, {
+        "type": "paragraph",
+        "content": "v2.1.0"
+    }, {
+        "type": "paragraph",
+        "content": "Theme settings allow designers to provide an easy way for any user to customize the look and feel of their shop without having to delve into HTML or CSS code. Please see our [help page on theme settings](http:\/\/docs.shopify.com\/themes\/theme-templates\/settings) to learn more about how you can make the theme customizable."
+    }, {
+        "type": "paragraph",
+        "content": "Review [Timber's documentation](http:\/\/shopify.github.io\/Timber\/) for any development help."
+    }]
+}, {
+    "name": "Colors",
+    "settings": [{
+        "type": "paragraph",
+        "content": "Use class=\"color\" on a an input tag to bring up the color picker. Only a few colors have been included here as an example."
+    }, {
+        "type": "header",
+        "content": "General colors"
+    }, {
+        "type": "color",
+        "id": "color_primary",
+        "label": "Primary",
+        "default": "#204a80",
+        "info": "Used for text links, and primary buttons"
+    }, {
+        "type": "color",
+        "id": "color_secondary",
+        "label": "Secondary",
+        "default": "#dcdcdc",
+        "info": "Used for secondary buttons"
+    }, {
+        "type": "color",
+        "id": "color_borders",
+        "label": "Borders",
+        "default": "#e5e5e5"
+    }, {
+        "type": "header",
+        "content": "Body"
+    }, {
+        "type": "color",
+        "id": "color_body_bg",
+        "label": "Background",
+        "default": "#ffffff"
+    }, {
+        "type": "color",
+        "id": "color_body_text",
+        "label": "Text",
+        "default": "#333333"
+    }, {
+        "type": "header",
+        "content": "Footer"
+    }, {
+        "type": "color",
+        "id": "color_footer_bg",
+        "label": "Background",
+        "default": "#f2f2f2"
+    }, {
+        "type": "color",
+        "id": "color_footer_text",
+        "label": "Text",
+        "default": "#636363"
+    }, {
+        "type": "color",
+        "id": "color_footer_social_link",
+        "label": "Social media icons",
+        "default": "#bbbbbb"
+    }]
+}, {
+    "name": "Header",
+    "settings": [{
+        "type": "header",
+        "content": "Logo"
+    }, {
+        "type": "checkbox",
+        "id": "logo_use_image",
+        "label": "Use custom logo"
+    }, {
+        "type": "image",
+        "id": "logo.png",
+        "label": "Custom logo",
+        "max-width": 450,
+        "max-height": 200,
+        "info": "Maximum logo dimensions are 450px wide by 200px high. The uploaded file will be resized to fit within those constraints."
+    }, {
+        "type": "text",
+        "id": "logo_max_width",
+        "label": "Max logo width",
+        "default": "450",
+        "info": "Defined in pixels. Do not add the 'px' unit."
+    }, {
+        "type": "header",
+        "content": "Favicon"
+    }, {
+        "type": "checkbox",
+        "id": "favicon_enable",
+        "label": "Use custom icon"
+    }, {
+        "type": "image",
+        "id": "favicon.png",
+        "label": "16 x 16px png",
+        "max-width": 16,
+        "max-height": 16
+    }]
+}, {
+    "name": "Menu",
+    "settings": [{
+            "type": "header",
+            "content": "Configuration menu"
+        }, {
+            "type": "link_list",
+            "id": "menu_nav_choose",
+            "label": "Main Navigation",
+            "default": "main-menu"
+        }, {
+            "type": "checkbox",
+            "id": "menu_sticky",
+            "label": "Sticky menu",
+            "default": false,
+            "info": "Check this option to make the menu sticky. Incompatible with the , 'Vertical ' menu. Sticky do not working on mobile devices.If the menu will be is sticky on mobile devices when you open it - you can not click on the last item, because it will always be outside the screen."
+
+        }, {
+            "type": "checkbox",
+            "id": "menu_use_animation",
+            "label": "Use animation in menu"
+        }, {
+            "type": "select",
+            "id": "menu_type_animation",
+            "label": "Dropdowns Animation",
+            "options": [{
+                "group": "Attention Seekers",
+                "value": "bounce",
+                "label": "Bounce"
+            }, {
+                "group": "Attention Seekers",
+                "value": "flash",
+                "label": "Flash"
+            }, {
+                "group": "Attention Seekers",
+                "value": "pulse",
+                "label": "Pulse"
+            }, {
+                "group": "Attention Seekers",
+                "value": "rubberBand",
+                "label": "RubberBand"
+            }, {
+                "group": "Attention Seekers",
+                "value": "tada",
+                "label": "Tada"
+            }, {
+                "group": "Attention Seekers",
+                "value": "swing",
+                "label": "Swing"
+            }, {
+                "group": "Attention Seekers",
+                "value": "shake",
+                "label": "Shake"
+            }, {
+                "group": "Attention Seekers",
+                "value": "wobble",
+                "label": "Wobble"
+            }, {
+                "group": "Attention Seekers",
+                "value": "jello",
+                "label": "jello"
+            }, {
+                "group": "Bouncing Entrances",
+                "value": "bounceIn",
+                "label": "bounceIn"
+            }, {
+                "group": "Bouncing Entrances",
+                "value": "bounceInDown",
+                "label": "bounceInDown"
+            }, {
+                "group": "Bouncing Entrances",
+                "value": "bounceInLeft",
+                "label": "bounceInLeft"
+            }, {
+                "group": "Bouncing Entrances",
+                "value": "bounceInRight",
+                "label": "bounceInRight"
+            }, {
+                "group": "Bouncing Entrances",
+                "value": "bounceInUp",
+                "label": "bounceInUp"
+            }, {
+                "group": "Bouncing Exits",
+                "value": "bounceOut",
+                "label": "bounceOut"
+            }, {
+                "group": "Bouncing Exits",
+                "value": "bounceOutDown",
+                "label": "bounceOutDown"
+            }, {
+                "group": "Bouncing Exits",
+                "value": "bounceOutLeft",
+                "label": "bounceOutLeft"
+            }, {
+                "group": "Bouncing Exits",
+                "value": "bounceOutRight",
+                "label": "bounceOutRight"
+            }, {
+                "group": "Bouncing Exits",
+                "value": "bounceOutUp",
+                "label": "bounceOutUp"
+            }, {
+                "group": "Fading Entrances",
+                "value": "fadeIn",
+                "label": "fadeIn"
+            }, {
+                "group": "Fading Entrances",
+                "value": "fadeInDown",
+                "label": "fadeInDown"
+            }, {
+                "group": "Fading Entrances",
+                "value": "fadeInDownBig",
+                "label": "fadeInDownBig"
+            }, {
+                "group": "Fading Entrances",
+                "value": "fadeInLeft",
+                "label": "fadeInLeft"
+            }, {
+                "group": "Fading Entrances",
+                "value": "fadeInLeftBig",
+                "label": "fadeInLeftBig"
+            }, {
+                "group": "Fading Entrances",
+                "value": "fadeInRight",
+                "label": "fadeInRight"
+            }, {
+                "group": "Fading Entrances",
+                "value": "fadeInRightBig",
+                "label": "fadeInRightBig"
+            }, {
+                "group": "Fading Entrances",
+                "value": "fadeInUp",
+                "label": "fadeInUp"
+            }, {
+                "group": "Fading Entrances",
+                "value": "fadeInUpBig",
+                "label": "fadeInUpBig"
+            }, {
+                "group": "Fading Exits",
+                "value": "fadeOut",
+                "label": "fadeOut"
+            }, {
+                "group": "Fading Exits",
+                "value": "fadeOutDown",
+                "label": "fadeOutDown"
+            }, {
+                "group": "Fading Exits",
+                "value": "fadeOutDownBig",
+                "label": "fadeOutDownBig"
+            }, {
+                "group": "Fading Exits",
+                "value": "fadeOutLeft",
+                "label": "fadeOutLeft"
+            }, {
+                "group": "Fading Exits",
+                "value": "fadeOutLeftBig",
+                "label": "fadeOutLeftBig"
+            }, {
+                "group": "Fading Exits",
+                "value": "fadeOutRight",
+                "label": "fadeOutRight"
+            }, {
+                "group": "Fading Exits",
+                "value": "fadeOutRightBig",
+                "label": "fadeOutRightBig"
+            }, {
+                "group": "Fading Exits",
+                "value": "fadeOutUp",
+                "label": "fadeOutUp"
+            }, {
+                "group": "Fading Exits",
+                "value": "fadeOutUpBig",
+                "label": "fadeOutUpBig"
+            }, {
+                "group": "Flippers",
+                "value": "flip",
+                "label": "flip"
+            }, {
+                "group": "Flippers",
+                "value": "flipInX",
+                "label": "flipInX"
+            }, {
+                "group": "Flippers",
+                "value": "flipOutX",
+                "label": "flipOutX"
+            }, {
+                "group": "Lightspeed",
+                "value": "lightSpeedIn",
+                "label": "lightSpeedIn"
+            }, {
+                "group": "Lightspeed",
+                "value": "lightSpeedOut",
+                "label": "lightSpeedOut"
+            }, {
+                "group": "Rotating Entrances",
+                "value": "rotateIn",
+                "label": "rotateIn"
+            }, {
+                "group": "Rotating Entrances",
+                "value": "rotateInDownLeft",
+                "label": "rotateInDownLeft"
+            }, {
+                "group": "Rotating Entrances",
+                "value": "rotateInDownRight",
+                "label": "rotateInDownRight"
+            }, {
+                "group": "Rotating Entrances",
+                "value": "rotateInUpLeft",
+                "label": "rotateInUpLeft"
+            }, {
+                "group": "Rotating Entrances",
+                "value": "rotateInUpRight",
+                "label": "rotateInUpRight"
+            }, {
+                "group": "Rotating Exits",
+                "value": "rotateOut",
+                "label": "rotateOut"
+            }, {
+                "group": "Rotating Exits",
+                "value": "rotateOutDownLeft",
+                "label": "rotateOutDownLeft"
+            }, {
+                "group": "Rotating Exits",
+                "value": "rotateOutDownRight",
+                "label": "rotateOutDownRight"
+            }, {
+                "group": "Rotating Exits",
+                "value": "rotateOutUpLeft",
+                "label": "rotateOutUpLeft"
+            }, {
+                "group": "Rotating Exits",
+                "value": "rotateOutUpRight",
+                "label": "rotateOutUpRight"
+            }, {
+                "group": "Sliding Entrances",
+                "value": "slideInUp",
+                "label": "slideInUp"
+            }, {
+                "group": "Sliding Entrances",
+                "value": "slideInDown",
+                "label": "slideInDown"
+            }, {
+                "group": "Sliding Entrances",
+                "value": "slideInLeft",
+                "label": "slideInLeft"
+            }, {
+                "group": "Sliding Entrances",
+                "value": "slideInRight",
+                "label": "slideInRight"
+            }, {
+                "group": "Sliding Exits",
+                "value": "slideOutUp",
+                "label": "slideOutUp"
+            }, {
+                "group": "Sliding Exits",
+                "value": "slideOutDown",
+                "label": "slideOutDown"
+            }, {
+                "group": "Sliding Exits",
+                "value": "slideOutLeft",
+                "label": "slideOutLeft"
+            }, {
+                "group": "Sliding Exits",
+                "value": "slideOutRight",
+                "label": "slideOutRight"
+            }, {
+                "group": "Zoom Entrances",
+                "value": "zoomIn",
+                "label": "zoomIn"
+            }, {
+                "group": "Zoom Entrances",
+                "value": "zoomInDown",
+                "label": "zoomInDown"
+            }, {
+                "group": "Zoom Entrances",
+                "value": "zoomInLeft",
+                "label": "zoomInLeft"
+            }, {
+                "group": "Zoom Entrances",
+                "value": "zoomInRight",
+                "label": "zoomInRight"
+            }, {
+                "group": "Zoom Entrances",
+                "value": "zoomInUp",
+                "label": "zoomInUp"
+            }, {
+                "group": "Zoom Exits",
+                "value": "zoomOut",
+                "label": "zoomOut"
+            }, {
+                "group": "Zoom Exits",
+                "value": "zoomOutDown",
+                "label": "zoomOutDown"
+            }, {
+                "group": "Zoom Exits",
+                "value": "zoomOutLeft",
+                "label": "zoomOutLeft"
+            }, {
+                "group": "Zoom Exits",
+                "value": "zoomOutRight",
+                "label": "zoomOutRight"
+            }, {
+                "group": "Zoom Exits",
+                "value": "zoomOutUp",
+                "label": "zoomOutUp"
+            }, {
+                "group": "Specials",
+                "value": "hinge",
+                "label": "hinge"
+            }, {
+                "group": "Specials",
+                "value": "rollIn",
+                "label": "rollIn"
+            }, {
+                "group": "Specials",
+                "value": "rollOut",
+                "label": "rollOut"
+            }],
+            "default": "slideInUp",
+            "info": "Select the type of animation to displaying dropdowns. Warning: Animation correctly works only in the latest versions of progressive browsers."
+        }, {
+            "type": "select",
+            "id": "menu_number_lever",
+            "label": "Numer lever menu",
+            "default": "2",
+            "info": "Lever dropdown menu",
+            "options": [{
+                "value": "1",
+                "label": "1"
+            }, {
+                "value": "2",
+                "label": "2"
+            }, {
+                "value": "3",
+                "label": "3"
+            }, {
+                "value": "4",
+                "label": "4"
+            }]
+
+        }, {
+            "type": "header",
+            "content": "First Lever Items"
+        }, {
+            "type": "color",
+            "id": "menu_color_primary",
+            "label": "Text Color Of The First Level item",
+            "default": "#204a80",
+            "info": "Color lever 1"
+        }, {
+            "type": "color",
+            "id": "menu_color_primary_active",
+            "label": "Text Color Of The First Level item active",
+            "default": "#204a80",
+            "info": "Color lever 1 when active"
+        }, {
+            "type": "color",
+            "id": "menu_background_color",
+            "label": "Background Color first lever",
+            "default": "#204a80",
+            "info": "Background Gradient (Color) Of The Primary Container"
+        }, {
+            "type": "color",
+            "id": "menu_background_color_active",
+            "label": "Background Color first lever active",
+            "default": "#204a80",
+            "info": "Background Gradient (Color) Of The Primary Container active"
+        }, {
+            "type": "image",
+            "id": "menu_background_image",
+            "label": "Background Image Of The Primary Container",
+            "max-width": 1366,
+            "max-height": 500,
+            "info": "You can choose and tune the background image for the primary container.."
+        },
+
+
+        {
+            "type": "header",
+            "content": "Dropdowns"
+        }, {
+            "type": "color",
+            "id": "menu_color_dropdown",
+            "label": "Text color dropdown menu",
+            "default": "#204a80",
+            "info": "Text Color Of The Dropdown  Menu Item"
+        }, {
+            "type": "color",
+            "id": "menu_color_dropdown_active",
+            "label": "Text color dropdown menu active",
+            "default": "#204a80",
+            "info": "Text Color Of The Dropdown active  Menu Item"
+        }, {
+            "type": "color",
+            "id": "menu_background_color_dropdown",
+            "label": "Background Color dropdown",
+            "default": "#204a80",
+            "info": "Background  (Color) Of The Dropdown Container"
+        }, {
+            "type": "color",
+            "id": "menu_background_color_dropdown_active",
+            "label": "Background Color dropdown active",
+            "default": "#204a80",
+            "info": "Background  (Color) Of The Dropdown Container active"
+        }, {
+            "type": "image",
+            "id": "menu_background_image_dropdown",
+            "label": "Background Image Of The Dropdown Container",
+            "max-width": 1366,
+            "max-height": 500,
+            "info": "You can choose and tune the background image for the Dropdown container.."
+        },
+
+        {
+            "type": "header",
+            "content": "Font settings"
+        }, {
+            "type": "select",
+            "id": "menu_font_google",
+            "label": "Font Of The First Level Item",
+            "options": [{
+                "label": "Abel",
+                "value": "Abel"
+            }, {
+                "label": "Abril Fatface",
+                "value": "Abril+Fatface"
+            }, {
+                "label": "Aclonica",
+                "value": "Aclonica"
+            }, {
+                "label": "Actor",
+                "value": "Actor"
+            }, {
+                "label": "Adamina",
+                "value": "Adamina"
+            }, {
+                "label": "Aguafina Script",
+                "value": "Aguafina+Script"
+            }, {
+                "label": "Aladin",
+                "value": "Aladin"
+            }, {
+                "label": "Aldrich",
+                "value": "Aldrich"
+            }, {
+                "label": "Alice",
+                "value": "Alice"
+            }, {
+                "label": "Alike Angular",
+                "value": "Alike+Angular"
+            }, {
+                "label": "Alike",
+                "value": "Alike"
+            }, {
+                "label": "Allan",
+                "value": "Allan"
+            }, {
+                "label": "Allerta Stencil",
+                "value": "Allerta+Stencil"
+            }, {
+                "label": "Allerta",
+                "value": "Allerta"
+            }, {
+                "label": "Amaranth",
+                "value": "Amaranth"
+            }, {
+                "label": "Amatic SC",
+                "value": "Amatic+SC"
+            }, {
+                "label": "Andada",
+                "value": "Andada"
+            }, {
+                "label": "Andika",
+                "value": "Andika"
+            }, {
+                "label": "Annie Use Your Telescope",
+                "value": "Annie+Use+Your+Telescope"
+            }, {
+                "label": "Anonymous Pro",
+                "value": "Anonymous+Pro"
+            }, {
+                "label": "Antic",
+                "value": "Antic"
+            }, {
+                "label": "Anton",
+                "value": "Anton"
+            }, {
+                "label": "Arapey",
+                "value": "Arapey"
+            }, {
+                "label": "Architects Daughter",
+                "value": "Architects+Daughter"
+            }, {
+                "label": "Arimo",
+                "value": "Arimo"
+            }, {
+                "label": "Artifika",
+                "value": "Artifika"
+            }, {
+                "label": "Arvo",
+                "value": "Arvo"
+            }, {
+                "label": "Asset",
+                "value": "Asset"
+            }, {
+                "label": "Astloch",
+                "value": "Astloch"
+            }, {
+                "label": "Atomic Age",
+                "value": "Atomic+Age"
+            }, {
+                "label": "Aubrey",
+                "value": "Aubrey"
+            }, {
+                "label": "Bangers",
+                "value": "Bangers"
+            }, {
+                "label": "Bentham",
+                "value": "Bentham"
+            }, {
+                "label": "Bevan",
+                "value": "Bevan"
+            }, {
+                "label": "Bigshot One",
+                "value": "Bigshot+One"
+            }, {
+                "label": "Bitter",
+                "value": "Bitter"
+            }, {
+                "label": "Black Ops One",
+                "value": "Black+Ops+One"
+            }, {
+                "label": "Bowlby One SC",
+                "value": "Bowlby+One+SC"
+            }, {
+                "label": "Bowlby One",
+                "value": "Bowlby+One"
+            }, {
+                "label": "Brawler",
+                "value": "Brawler"
+            }, {
+                "label": "Bubblegum Sans",
+                "value": "Bubblegum+Sans"
+            }, {
+                "label": "Buda",
+                "value": "Buda"
+            }, {
+                "label": "Butcherman Caps",
+                "value": "Butcherman+Caps"
+            }, {
+                "label": "Cabin Condensed",
+                "value": "Cabin+Condensed"
+            }, {
+                "label": "Cabin Sketch",
+                "value": "Cabin+Sketch"
+            }, {
+                "label": "Cabin",
+                "value": "Cabin"
+            }, {
+                "label": "Cagliostro",
+                "value": "Cagliostro"
+            }, {
+                "label": "Calligraffitti",
+                "value": "Calligraffitti"
+            }, {
+                "label": "Candal",
+                "value": "Candal"
+            }, {
+                "label": "Cantarell",
+                "value": "Cantarell"
+            }, {
+                "label": "Cardo",
+                "value": "Cardo"
+            }, {
+                "label": "Carme",
+                "value": "Carme"
+            }, {
+                "label": "Carter One",
+                "value": "Carter+One"
+            }, {
+                "label": "Caudex",
+                "value": "Caudex"
+            }, {
+                "label": "Cedarville Cursive",
+                "value": "Cedarville+Cursive"
+            }, {
+                "label": "Changa One",
+                "value": "Changa+One"
+            }, {
+                "label": "Cherry Cream Soda",
+                "value": "Cherry+Cream+Soda"
+            }, {
+                "label": "Chewy",
+                "value": "Chewy"
+            }, {
+                "label": "Chicle",
+                "value": "Chicle"
+            }, {
+                "label": "Chivo",
+                "value": "Chivo"
+            }, {
+                "label": "Coda Caption",
+                "value": "Coda+Caption"
+            }, {
+                "label": "Coda",
+                "value": "Coda"
+            }, {
+                "label": "Comfortaa",
+                "value": "Comfortaa"
+            }, {
+                "label": "Coming Soon",
+                "value": "Coming+Soon"
+            }, {
+                "label": "Contrail One",
+                "value": "Contrail+One"
+            }, {
+                "label": "Convergence",
+                "value": "Convergence"
+            }, {
+                "label": "Cookie",
+                "value": "Cookie"
+            }, {
+                "label": "Copse",
+                "value": "Copse"
+            }, {
+                "label": "Corben",
+                "value": "Corben"
+            }, {
+                "label": "Cousine",
+                "value": "Cousine"
+            }, {
+                "label": "Coustard",
+                "value": "Coustard"
+            }, {
+                "label": "Covered By Your Grace",
+                "value": "Covered+By+Your+Grace"
+            }, {
+                "label": "Crafty Girls",
+                "value": "Crafty+Girls"
+            }, {
+                "label": "Creepster Caps",
+                "value": "Creepster+Caps"
+            }, {
+                "label": "Crimson Text",
+                "value": "Crimson+Text"
+            }, {
+                "label": "Crushed",
+                "value": "Crushed"
+            }, {
+                "label": "Cuprum",
+                "value": "Cuprum"
+            }, {
+                "label": "Damion",
+                "value": "Damion"
+            }, {
+                "label": "Dancing Script",
+                "value": "Dancing+Script"
+            }, {
+                "label": "Dawning of a New Day",
+                "value": "Dawning+of+a+New+Day"
+            }, {
+                "label": "Days One",
+                "value": "Days+One"
+            }, {
+                "label": "Delius Swash Caps",
+                "value": "Delius+Swash+Caps"
+            }, {
+                "label": "Delius Unicase",
+                "value": "Delius+Unicase"
+            }, {
+                "label": "Delius",
+                "value": "Delius"
+            }, {
+                "label": "Devonshire",
+                "value": "Devonshire"
+            }, {
+                "label": "Didact Gothic",
+                "value": "Didact+Gothic"
+            }, {
+                "label": "Dorsa",
+                "value": "Dorsa"
+            }, {
+                "label": "Dr Sugiyama",
+                "value": "Dr+Sugiyama"
+            }, {
+                "label": "Droid Sans Mono",
+                "value": "Droid+Sans+Mono"
+            }, {
+                "label": "Droid Sans",
+                "value": "Droid+Sans"
+            }, {
+                "label": "Droid Serif",
+                "value": "Droid+Serif"
+            }, {
+                "label": "EB Garamond",
+                "value": "EB+Garamond"
+            }, {
+                "label": "Eater Caps",
+                "value": "Eater+Caps"
+            }, {
+                "label": "Expletus Sans",
+                "value": "Expletus+Sans"
+            }, {
+                "label": "Fanwood Text",
+                "value": "Fanwood+Text"
+            }, {
+                "label": "Federant",
+                "value": "Federant"
+            }, {
+                "label": "Federo",
+                "value": "Federo"
+            }, {
+                "label": "Fjord One",
+                "value": "Fjord+One"
+            }, {
+                "label": "Fondamento",
+                "value": "Fondamento"
+            }, {
+                "label": "Fontdiner Swanky",
+                "value": "Fontdiner+Swanky"
+            }, {
+                "label": "Forum",
+                "value": "Forum"
+            }, {
+                "label": "Francois One",
+                "value": "Francois+One"
+            }, {
+                "label": "Gentium Basic",
+                "value": "Gentium+Basic"
+            }, {
+                "label": "Gentium Book Basic",
+                "value": "Gentium+Book+Basic"
+            }, {
+                "label": "Geo",
+                "value": "Geo"
+            }, {
+                "label": "Geostar Fill",
+                "value": "Geostar+Fill"
+            }, {
+                "label": "Geostar",
+                "value": "Geostar"
+            }, {
+                "label": "Give You Glory",
+                "value": "Give+You+Glory"
+            }, {
+                "label": "Gloria Hallelujah",
+                "value": "Gloria+Hallelujah"
+            }, {
+                "label": "Goblin One",
+                "value": "Goblin+One"
+            }, {
+                "label": "Gochi Hand",
+                "value": "Gochi+Hand"
+            }, {
+                "label": "Goudy Bookletter 1911",
+                "value": "Goudy+Bookletter+1911"
+            }, {
+                "label": "Gravitas One",
+                "value": "Gravitas+One"
+            }, {
+                "label": "Gruppo",
+                "value": "Gruppo"
+            }, {
+                "label": "Hammersmith One",
+                "value": "Hammersmith+One"
+            }, {
+                "label": "Herr Von Muellerhoff",
+                "value": "Herr+Von+Muellerhoff"
+            }, {
+                "label": "Holtwood One SC",
+                "value": "Holtwood+One+SC"
+            }, {
+                "label": "Homemade Apple",
+                "value": "Homemade+Apple"
+            }, {
+                "label": "IM Fell DW Pica SC",
+                "value": "IM+Fell+DW+Pica+SC"
+            }, {
+                "label": "IM Fell DW Pica",
+                "value": "IM+Fell+DW+Pica"
+            }, {
+                "label": "IM Fell Double Pica SC",
+                "value": "IM+Fell+Double+Pica+SC"
+            }, {
+                "label": "IM Fell Double Pica",
+                "value": "IM+Fell+Double+Pica"
+            }, {
+                "label": "IM Fell English SC",
+                "value": "IM+Fell+English+SC"
+            }, {
+                "label": "IM Fell English",
+                "value": "IM+Fell+English"
+            }, {
+                "label": "IM Fell French Canon SC",
+                "value": "IM+Fell+French+Canon+SC"
+            }, {
+                "label": "IM Fell French Canon",
+                "value": "IM+Fell+French+Canon"
+            }, {
+                "label": "IM Fell Great Primer SC",
+                "value": "IM+Fell+Great+Primer+SC"
+            }, {
+                "label": "IM Fell Great Primer",
+                "value": "IM+Fell+Great+Primer"
+            }, {
+                "label": "Iceland",
+                "value": "Iceland"
+            }, {
+                "label": "Inconsolata",
+                "value": "Inconsolata"
+            }, {
+                "label": "Indie Flower",
+                "value": "Indie+Flower"
+            }, {
+                "label": "Irish Grover",
+                "value": "Irish+Grover"
+            }, {
+                "label": "Istok Web",
+                "value": "Istok+Web"
+            }, {
+                "label": "Jockey One",
+                "value": "Jockey+One"
+            }, {
+                "label": "Josefin Sans",
+                "value": "Josefin+Sans"
+            }, {
+                "label": "Josefin Slab",
+                "value": "Josefin+Slab"
+            }, {
+                "label": "Judson",
+                "value": "Judson"
+            }, {
+                "label": "Julee",
+                "value": "Julee"
+            }, {
+                "label": "Jura",
+                "value": "Jura"
+            }, {
+                "label": "Just Another Hand",
+                "value": "Just+Another+Hand"
+            }, {
+                "label": "Just Me Again Down Here",
+                "value": "Just+Me+Again+Down+Here"
+            }, {
+                "label": "Kameron",
+                "value": "Kameron"
+            }, {
+                "label": "Kelly Slab",
+                "value": "Kelly+Slab"
+            }, {
+                "label": "Kenia",
+                "value": "Kenia"
+            }, {
+                "label": "Knewave",
+                "value": "Knewave"
+            }, {
+                "label": "Kranky",
+                "value": "Kranky"
+            }, {
+                "label": "Kreon",
+                "value": "Kreon"
+            }, {
+                "label": "Kristi",
+                "value": "Kristi"
+            }, {
+                "label": "La Belle Aurore",
+                "value": "La+Belle+Aurore"
+            }, {
+                "label": "Lancelot",
+                "value": "Lancelot"
+            }, {
+                "label": "Lato",
+                "value": "Lato"
+            }, {
+                "label": "League Script",
+                "value": "League+Script"
+            }, {
+                "label": "Leckerli One",
+                "value": "Leckerli+One"
+            }, {
+                "label": "Lekton",
+                "value": "Lekton"
+            }, {
+                "label": "Lemon",
+                "value": "Lemon"
+            }, {
+                "label": "Limelight",
+                "value": "Limelight"
+            }, {
+                "label": "Linden Hill",
+                "value": "Linden+Hill"
+            }, {
+                "label": "Lobster Two",
+                "value": "Lobster+Two"
+            }, {
+                "label": "Lobster",
+                "value": "Lobster"
+            }, {
+                "label": "Lora",
+                "value": "Lora"
+            }, {
+                "label": "Love Ya Like A Sister",
+                "value": "Love+Ya+Like+A+Sister"
+            }, {
+                "label": "Loved by the King",
+                "value": "Loved+by+the+King"
+            }, {
+                "label": "Luckiest Guy",
+                "value": "Luckiest+Guy"
+            }, {
+                "label": "Maiden Orange",
+                "value": "Maiden+Orange"
+            }, {
+                "label": "Mako",
+                "value": "Mako"
+            }, {
+                "label": "Marck Script",
+                "value": "Marck+Script"
+            }, {
+                "label": "Marvel",
+                "value": "Marvel"
+            }, {
+                "label": "Mate SC",
+                "value": "Mate+SC"
+            }, {
+                "label": "Mate",
+                "value": "Mate"
+            }, {
+                "label": "Maven Pro",
+                "value": "Maven+Pro"
+            }, {
+                "label": "Meddon",
+                "value": "Meddon"
+            }, {
+                "label": "MedievalSharp",
+                "value": "MedievalSharp"
+            }, {
+                "label": "Megrim",
+                "value": "Megrim"
+            }, {
+                "label": "Merienda One",
+                "value": "Merienda+One"
+            }, {
+                "label": "Merriweather",
+                "value": "Merriweather"
+            }, {
+                "label": "Metrophobic",
+                "value": "Metrophobic"
+            }, {
+                "label": "Michroma",
+                "value": "Michroma"
+            }, {
+                "label": "Miltonian Tattoo",
+                "value": "Miltonian+Tattoo"
+            }, {
+                "label": "Miltonian",
+                "value": "Miltonian"
+            }, {
+                "label": "Miss Fajardose",
+                "value": "Miss+Fajardose"
+            }, {
+                "label": "Miss Saint Delafield",
+                "value": "Miss+Saint+Delafield"
+            }, {
+                "label": "Modern Antiqua",
+                "value": "Modern+Antiqua"
+            }, {
+                "label": "Molengo",
+                "value": "Molengo"
+            }, {
+                "label": "Monofett",
+                "value": "Monofett"
+            }, {
+                "label": "Monoton",
+                "value": "Monoton"
+            }, {
+                "label": "Monsieur La Doulaise",
+                "value": "Monsieur+La+Doulaise"
+            }, {
+                "label": "Montez",
+                "value": "Montez"
+            }, {
+                "label": "Mountains of Christmas",
+                "value": "Mountains+of+Christmas"
+            }, {
+                "label": "Mr Bedford",
+                "value": "Mr+Bedford"
+            }, {
+                "label": "Mr Dafoe",
+                "value": "Mr+Dafoe"
+            }, {
+                "label": "Mr De Haviland",
+                "value": "Mr+De+Haviland"
+            }, {
+                "label": "Mrs Sheppards",
+                "value": "Mrs+Sheppards"
+            }, {
+                "label": "Muli",
+                "value": "Muli"
+            }, {
+                "label": "Neucha",
+                "value": "Neucha"
+            }, {
+                "label": "Neuton",
+                "value": "Neuton"
+            }, {
+                "label": "News Cycle",
+                "value": "News+Cycle"
+            }, {
+                "label": "Niconne",
+                "value": "Niconne"
+            }, {
+                "label": "Nixie One",
+                "value": "Nixie+One"
+            }, {
+                "label": "Nobile",
+                "value": "Nobile"
+            }, {
+                "label": "Nosifer Caps",
+                "value": "Nosifer+Caps"
+            }, {
+                "label": "Nothing You Could Do",
+                "value": "Nothing+You+Could+Do"
+            }, {
+                "label": "Nova Cut",
+                "value": "Nova+Cut"
+            }, {
+                "label": "Nova Flat",
+                "value": "Nova+Flat"
+            }, {
+                "label": "Nova Mono",
+                "value": "Nova+Mono"
+            }, {
+                "label": "Nova Oval",
+                "value": "Nova+Oval"
+            }, {
+                "label": "Nova Round",
+                "value": "Nova+Round"
+            }, {
+                "label": "Nova Script",
+                "value": "Nova+Script"
+            }, {
+                "label": "Nova Slim",
+                "value": "Nova+Slim"
+            }, {
+                "label": "Nova Square",
+                "value": "Nova+Square"
+            }, {
+                "label": "Numans",
+                "value": "Numans"
+            }, {
+                "label": "Nunito",
+                "value": "Nunito"
+            }, {
+                "label": "Old Standard TT",
+                "value": "Old+Standard+TT"
+            }, {
+                "label": "Open Sans Condensed",
+                "value": "Open+Sans+Condensed"
+            }, {
+                "label": "Open Sans",
+                "value": "Open+Sans"
+            }, {
+                "label": "Orbitron",
+                "value": "Orbitron"
+            }, {
+                "label": "Oswald",
+                "value": "Oswald"
+            }, {
+                "label": "Over the Rainbow",
+                "value": "Over+the+Rainbow"
+            }, {
+                "label": "Ovo",
+                "value": "Ovo"
+            }, {
+                "label": "PT Sans Caption",
+                "value": "PT+Sans+Caption"
+            }, {
+                "label": "PT Sans Narrow",
+                "value": "PT+Sans+Narrow"
+            }, {
+                "label": "PT Sans",
+                "value": "PT+Sans"
+            }, {
+                "label": "PT Serif Caption",
+                "value": "PT+Serif+Caption"
+            }, {
+                "label": "PT Serif",
+                "value": "PT+Serif"
+            }, {
+                "label": "Pacifico",
+                "value": "Pacifico"
+            }, {
+                "label": "Passero One",
+                "value": "Passero+One"
+            }, {
+                "label": "Patrick Hand",
+                "value": "Patrick+Hand"
+            }, {
+                "label": "Paytone One",
+                "value": "Paytone+One"
+            }, {
+                "label": "Permanent Marker",
+                "value": "Permanent+Marker"
+            }, {
+                "label": "Petrona",
+                "value": "Petrona"
+            }, {
+                "label": "Philosopher",
+                "value": "Philosopher"
+            }, {
+                "label": "Piedra",
+                "value": "Piedra"
+            }, {
+                "label": "Pinyon Script",
+                "value": "Pinyon+Script"
+            }, {
+                "label": "Play",
+                "value": "Play"
+            }, {
+                "label": "Playfair Display",
+                "value": "Playfair+Display"
+            }, {
+                "label": "Podkova",
+                "value": "Podkova"
+            }, {
+                "label": "Poller One",
+                "value": "Poller+One"
+            }, {
+                "label": "Poly",
+                "value": "Poly"
+            }, {
+                "label": "Pompiere",
+                "value": "Pompiere"
+            }, {
+                "label": "Prata",
+                "value": "Prata"
+            }, {
+                "label": "Prociono",
+                "value": "Prociono"
+            }, {
+                "label": "Puritan",
+                "value": "Puritan"
+            }, {
+                "label": "Quattrocento Sans",
+                "value": "Quattrocento+Sans"
+            }, {
+                "label": "Quattrocento",
+                "value": "Quattrocento"
+            }, {
+                "label": "Questrial",
+                "value": "Questrial"
+            }, {
+                "label": "Quicksand",
+                "value": "Quicksand"
+            }, {
+                "label": "Radley",
+                "value": "Radley"
+            }, {
+                "label": "Raleway",
+                "value": "Raleway"
+            }, {
+                "label": "Rammetto One",
+                "value": "Rammetto+One"
+            }, {
+                "label": "Rancho",
+                "value": "Rancho"
+            }, {
+                "label": "Rationale",
+                "value": "Rationale"
+            }, {
+                "label": "Redressed",
+                "value": "Redressed"
+            }, {
+                "label": "Reenie Beanie",
+                "value": "Reenie+Beanie"
+            }, {
+                "label": "Ribeye Marrow",
+                "value": "Ribeye+Marrow"
+            }, {
+                "label": "Ribeye",
+                "value": "Ribeye"
+            }, {
+                "label": "Righteous",
+                "value": "Righteous"
+            }, {
+                "label": "Rochester",
+                "value": "Rochester"
+            }, {
+                "label": "Rock Salt",
+                "value": "Rock+Salt"
+            }, {
+                "label": "Rokkitt",
+                "value": "Rokkitt"
+            }, {
+                "label": "Rosario",
+                "value": "Rosario"
+            }, {
+                "label": "Ruslan Display",
+                "value": "Ruslan+Display"
+            }, {
+                "label": "Salsa",
+                "value": "Salsa"
+            }, {
+                "label": "Sancreek",
+                "value": "Sancreek"
+            }, {
+                "label": "Sansita One",
+                "value": "Sansita+One"
+            }, {
+                "label": "Satisfy",
+                "value": "Satisfy"
+            }, {
+                "label": "Schoolbell",
+                "value": "Schoolbell"
+            }, {
+                "label": "Shadows Into Light",
+                "value": "Shadows+Into+Light"
+            }, {
+                "label": "Shanti",
+                "value": "Shanti"
+            }, {
+                "label": "Short Stack",
+                "value": "Short+Stack"
+            }, {
+                "label": "Sigmar One",
+                "value": "Sigmar+One"
+            }, {
+                "label": "Signika Negative",
+                "value": "Signika+Negative"
+            }, {
+                "label": "Signika",
+                "value": "Signika"
+            }, {
+                "label": "Six Caps",
+                "value": "Six+Caps"
+            }, {
+                "label": "Slackey",
+                "value": "Slackey"
+            }, {
+                "label": "Smokum",
+                "value": "Smokum"
+            }, {
+                "label": "Smythe",
+                "value": "Smythe"
+            }, {
+                "label": "Sniglet",
+                "value": "Sniglet"
+            }, {
+                "label": "Snippet",
+                "value": "Snippet"
+            }, {
+                "label": "Sorts Mill Goudy",
+                "value": "Sorts+Mill+Goudy"
+            }, {
+                "label": "Special Elite",
+                "value": "Special+Elite"
+            }, {
+                "label": "Spinnaker",
+                "value": "Spinnaker"
+            }, {
+                "label": "Spirax",
+                "value": "Spirax"
+            }, {
+                "label": "Stardos Stencil",
+                "value": "Stardos+Stencil"
+            }, {
+                "label": "Sue Ellen Francisco",
+                "value": "Sue+Ellen+Francisco"
+            }, {
+                "label": "Sunshiney",
+                "value": "Sunshiney"
+            }, {
+                "label": "Supermercado One",
+                "value": "Supermercado+One"
+            }, {
+                "label": "Swanky and Moo Moo",
+                "value": "Swanky+and+Moo+Moo"
+            }, {
+                "label": "Syncopate",
+                "value": "Syncopate"
+            }, {
+                "label": "Tangerine",
+                "value": "Tangerine"
+            }, {
+                "label": "Tenor Sans",
+                "value": "Tenor+Sans"
+            }, {
+                "label": "Terminal Dosis",
+                "value": "Terminal+Dosis"
+            }, {
+                "label": "The Girl Next Door",
+                "value": "The+Girl+Next+Door"
+            }, {
+                "label": "Tienne",
+                "value": "Tienne"
+            }, {
+                "label": "Tinos",
+                "value": "Tinos"
+            }, {
+                "label": "Tulpen One",
+                "value": "Tulpen+One"
+            }, {
+                "label": "Ubuntu Condensed",
+                "value": "Ubuntu+Condensed"
+            }, {
+                "label": "Ubuntu Mono",
+                "value": "Ubuntu+Mono"
+            }, {
+                "label": "Ubuntu",
+                "value": "Ubuntu"
+            }, {
+                "label": "Ultra",
+                "value": "Ultra"
+            }, {
+                "label": "UnifrakturCook",
+                "value": "UnifrakturCook"
+            }, {
+                "label": "UnifrakturMaguntia",
+                "value": "UnifrakturMaguntia"
+            }, {
+                "label": "Unkempt",
+                "value": "Unkempt"
+            }, {
+                "label": "Unlock",
+                "value": "Unlock"
+            }, {
+                "label": "Unna",
+                "value": "Unna"
+            }, {
+                "label": "VT323",
+                "value": "VT323"
+            }, {
+                "label": "Varela Round",
+                "value": "Varela+Round"
+            }, {
+                "label": "Varela",
+                "value": "Varela"
+            }, {
+                "label": "Vast Shadow",
+                "value": "Vast+Shadow"
+            }, {
+                "label": "Vibur",
+                "value": "Vibur"
+            }, {
+                "label": "Vidaloka",
+                "value": "Vidaloka"
+            }, {
+                "label": "Volkhov",
+                "value": "Volkhov"
+            }, {
+                "label": "Vollkorn",
+                "value": "Vollkorn"
+            }, {
+                "label": "Voltaire",
+                "value": "Voltaire"
+            }, {
+                "label": "Waiting for the Sunrise",
+                "value": "Waiting+for+the+Sunrise"
+            }, {
+                "label": "Wallpoet",
+                "value": "Wallpoet"
+            }, {
+                "label": "Walter Turncoat",
+                "value": "Walter+Turncoat"
+            }, {
+                "label": "Wire One",
+                "value": "Wire+One"
+            }, {
+                "label": "Yanone Kaffeesatz",
+                "value": "Yanone+Kaffeesatz"
+            }, {
+                "label": "Yellowtail",
+                "value": "Yellowtail"
+            }, {
+                "label": "Yeseva One",
+                "value": "Yeseva+One"
+            }, {
+                "label": "Zeyada",
+                "value": "Zeyada"
+            }],
+            "default": "Raleway"
+        }, {
+            "type": "text",
+            "id": "menu_font_size",
+            "label": "Font size",
+            "default": "14",
+            "info": "Unit pixel",
+            "placeholder": "14px"
+        }, {
+            "type": "select",
+            "id": "menu_font_weight",
+            "options": [{
+                "value": "300",
+                "label": "300"
+            }, {
+                "value": "400",
+                "label": "400"
+            }, {
+                "value": "500",
+                "label": "500"
+            }, {
+                "value": "600",
+                "label": "600"
+            }, {
+                "value": "700",
+                "label": "700"
+            }, {
+                "value": "800",
+                "label": "800"
+            }, {
+                "value": "900",
+                "label": "900"
+            }],
+            "label": "Font weight",
+            "default": "400"
+        }
+    ]
+}, {
+    "name": "Footer",
+    "settings": [{
+        "type": "checkbox",
+        "id": "footer_social_enable",
+        "label": "Show social media icons"
+    }, {
+        "type": "text",
+        "id": "social_twitter_link",
+        "label": "Twitter URL",
+        "info": "Example: https://twitter.com/shopify"
+    }, {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "Facebook URL",
+        "info": "Example: https://www.facebook.com/shopify"
+    }, {
+        "type": "checkbox",
+        "id": "footer_newsletter_enable",
+        "label": "Show newsletter field"
+    }, {
+        "type": "text",
+        "id": "newsletter_form_action",
+        "label": "MailChimp form action URL",
+        "info": "[Where do I find my MailChimp form action URL?](http:\/\/docs.shopify.com\/support\/configuration\/store-customization\/where-do-i-get-my-mailchimp-form-action)"
+    }]
+}, {
+    "name": "Cart page",
+    "settings": [{
+        "type": "checkbox",
+        "id": "cart_notes_enable",
+        "label": "Enable cart notes"
+    }, {
+        "type": "checkbox",
+        "id": "cart_vendor_enable",
+        "label": "Show product vendor"
+    }, {
+        "type": "select",
+        "id": "ajax_cart_method",
+        "label": "Cart type",
+        "options": [{
+            "value": "drawer",
+            "label": "Drawer"
+        }, {
+            "value": "page",
+            "label": "Page"
+        }]
+    }]
+}, {
+    "name": "Social media",
+    "settings": [{
+        "type": "text",
+        "id": "twittercard_handle",
+        "label": "Twitter handle",
+        "info": "Example: @shopify"
+    }]
+}]
